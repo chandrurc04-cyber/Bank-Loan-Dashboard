@@ -1,9 +1,9 @@
 # Bank-Loan-Dashboard
 📌 Project Overview
 
-  Banks need a reliable way to monitor loan applications, funded amounts, repayments, and overall portfolio risk. This project builds a 3-dashboard Power BI solution that gives management a complete view of lending operations — from high-level KPIs down to individual loan-level details.
+Banks need a reliable way to monitor loan applications, funded amounts, repayments, and overall portfolio risk. This project builds a 3-dashboard Power BI solution that gives management a complete view of lending operations — from high-level KPIs down to individual loan-level details.
     
-  Data pipeline: SQL Server (data storage & querying) → Power Query (cleaning & transformation) → Power BI (modeling, DAX, visualization)
+Data pipeline: SQL Server (data storage & querying) → Power Query (cleaning & transformation) → Power BI (modeling, DAX, visualization)
 
 🎯 Problem Statement
 
@@ -21,28 +21,28 @@ The bank required a reporting solution to answer:
   
   High-level KPIs for tracking overall lending performance:
   
-    1. Total Loan Applications (with MTD and MoM change)
-    2. Total Funded Amount (with MTD and MoM change)
-    3. Total Amount Received (with MTD and MoM change)
-    4. Average Interest Rate (with MTD and MoM change)
-    5. Average Debt-to-Income Ratio (DTI) (with MTD and MoM change)
-    6. Good Loan vs Bad Loan breakdown (application %, count, funded amount, received amount)
-    7. Loan Status Grid View — metrics segmented by loan status
+  1. Total Loan Applications (with MTD and MoM change)
+  2. Total Funded Amount (with MTD and MoM change)
+  3. Total Amount Received (with MTD and MoM change)
+  4. Average Interest Rate (with MTD and MoM change)
+  5. Average Debt-to-Income Ratio (DTI) (with MTD and MoM change)
+  6. Good Loan vs Bad Loan breakdown (application %, count, funded amount, received amount)
+  7. Loan Status Grid View — metrics segmented by loan status
   
   2️⃣ Overview Dashboard
   
   Visual, trend-based analysis of the loan portfolio:
   
-    1. Monthly Trends by Issue Date (Line Chart) — seasonality & long-term lending trends
-    2. Regional Analysis by State (Filled Map) — geographic lending distribution
-    3. Loan Term Analysis (Donut Chart) — distribution across loan term lengths
-    4. Employee Length Analysis (Bar Chart) — impact of employment history on applications
-    5. Loan Purpose Breakdown (Bar Chart) — primary reasons borrowers seek financing
-    6. Home Ownership Analysis (Tree Map) — how home ownership status affects lending
+  1. Monthly Trends by Issue Date (Line Chart) — seasonality & long-term lending trends
+  2. Regional Analysis by State (Filled Map) — geographic lending distribution
+  3. Loan Term Analysis (Donut Chart) — distribution across loan term lengths
+  4. Employee Length Analysis (Bar Chart) — impact of employment history on applications
+  5. Loan Purpose Breakdown (Bar Chart) — primary reasons borrowers seek financing
+  6. Home Ownership Analysis (Tree Map) — how home ownership status affects lending
   
   3️⃣ Details Dashboard
   
-    A grid-based, drill-through view providing a consolidated, loan-by-loan snapshot of borrower profiles, loan terms, and repayment performance — a one-stop reference for detailed analysis.
+  A grid-based, drill-through view providing a consolidated, loan-by-loan snapshot of borrower profiles, loan terms, and repayment performance — a one-stop reference for detailed analysis.
 
 🖼️ Dashboard Previews
 
@@ -54,7 +54,6 @@ Overview
 
 Details
 <img width="1091" height="596" alt="loan_status_Details" src="https://github.com/user-attachments/assets/20895b6a-3c7f-4f1a-a51c-cf0c563e155b" />
-
 
 🗂️ Dataset
 
@@ -83,30 +82,35 @@ Key fields include:
 
   SQL (MS SQL Server)
   
-    1. Creating databases & tables
-    2. Data cleaning and preprocessing
-    3. Queries: SELECT, GROUP BY, ORDER BY, DISTINCT, COUNT, LIMIT
-    4. Date functions: DATENAME, DATEPART, CAST
-    5. Window functions: CTE, PARTITION BY
+  1. Creating databases & tables
+  2. Data cleaning and preprocessing
+  3. Queries: SELECT, GROUP BY, ORDER BY, DISTINCT, COUNT, LIMIT
+  4. Date functions: DATENAME, DATEPART, CAST
+  5. Window functions: CTE, PARTITION BY
   
   Power BI
   
-    1. Connecting to SQL Server as a data source
-    2. Data modeling & Power Query transformations
-    3. Date tables & Time Intelligence functions
-    4. DAX: date functions, text functions, filter functions, CALCULATE, SUM/SUMX
-    5. Building KPI cards, charts, and custom visual formatting
-    6. Navigation buttons and page interactivity
+  1. Connecting to SQL Server as a data source
+  2. Data modeling & Power Query transformations
+  3. Date tables & Time Intelligence functions
+  4. DAX: date functions, text functions, filter functions, CALCULATE, SUM/SUMX
+  5. Building KPI cards, charts, and custom visual formatting
+  6. Navigation buttons and page interactivity
 
    
 📁 Repository Structure
 
-├── Bank Loan.pbix              # Power BI project file
-├── financial_loan_bank.csv     # Source dataset
-├── loan_status_Summary.jpg     # Summary dashboard screenshot
-├── loan_status_Overview.jpg    # Overview dashboard screenshot
-├── loan_status_Details.jpg     # Details dashboard screenshot
-└── README.md                   # Project documentation
+├── Bank Loan.pbix &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        # Power BI project file
+
+├── financial_loan_bank.csv   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  # Source dataset
+
+├── loan_status_Summary.jpg   &ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  # Summary dashboard screenshot
+
+├── loan_status_Overview.jpg  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Overview dashboard screenshot
+
+├── loan_status_Details.jpg   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    # Details dashboard screenshot
+
+└── README.md        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            # Project documentation
 
 🚀 How to Use
   1. Clone this repository:
@@ -123,4 +127,5 @@ Key fields include:
   4. Monthly trend analysis helps identify seasonality in loan demand.
 
 👤 Author
-    Feel free to connect or reach out with any questions about this project.
+  
+   Feel free to connect or reach out with any questions about this project.
